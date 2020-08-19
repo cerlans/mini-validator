@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<meta> <link rel="stylesheet" href="timer.css">
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+  .firstDiv {
+      max-width: 800px;
+      margin: 0 auto;
+      border: solid black;
+  }
+  form input {
+      width: 100%;
+      margin-bottom: 5px;
+      padding:15px;
+
+  }
+ 
+</style>
+</head>
+
+<body>
+  <div class="firstDiv">
+      <div class="shader">
+    <form action="/action_page.php" method="POST">
+        <input type="text" id="fname" name="Username" placeholder="Username" required><br>
+        <input type="text" id="Email" name="Email" placeholder="Email Address" onkeypress="keydown()" ><br><br>
+        <input type="text" id="sname" name="Password" placeholder="Password"><br>
+        <input type="text" id="lname" name="ConfPassword" placeholder="Confirm Password" required><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      </div>
+  </div>
+<script src="./ok.js">  
+</script>
+</body>
+
+</html>
+
+
