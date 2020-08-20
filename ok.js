@@ -24,7 +24,7 @@ y.insertBefore(placeholderP,x)
 
 function keydown() { 
     var z = document.getElementById('Email').value;
-    if(z.includes('@')) {
+    if(z.includes('@') && z.length > 10 ) {
        placeholderP.innerText = 'This is a good Email!'
     }else{
         placeholderP.innerText = 'This is not a valid email!'
