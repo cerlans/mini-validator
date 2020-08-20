@@ -19,16 +19,16 @@ var placeholderP = document.createElement('p');
 document.body.appendChild(placeholderP);
 var x = document.getElementsByTagName('input')[2];
 var y = document.getElementsByTagName('form')[0];
-console.log(y);
-console.log(x);
 console.log(placeholderP);
+y.insertBefore(placeholderP,x)
+
 function keydown() { 
     var z = document.getElementById('Email').value;
     if(z.includes('@')) {
-        console.log(true);
-        console.log(z);
+       placeholderP.innerText = 'This is a good Email!'
+
     }else{
-        console.log(false);
+        placeholderP.innerText = 'This is not a valid email!'
     }
     
 }
