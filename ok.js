@@ -26,7 +26,6 @@ function keydown() {
     var z = document.getElementById('Email').value;
     if(z.includes('@')) {
        placeholderP.innerText = 'This is a good Email!'
-
     }else{
         placeholderP.innerText = 'This is not a valid email!'
     }
@@ -39,17 +38,5 @@ function example (s) {
     var value = s;
     console.log(value);
 }
-/*
-function emailValidator() {
-    if (z.includes('@')) {
-        document.body.appendChild(placeholderP);
-        document.body.insertBefore(placeholderP,x);
-        placeholderP.innerHTML = 'This is a valid Email!'
-      } else {
-        placeholderP.innerHTML = 'Must be a valid Email!'
-
-      }
-   }
-*/
 
   
