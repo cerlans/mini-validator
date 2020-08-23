@@ -32,11 +32,17 @@ function keydown() {
     
 }
 
-document.getElementById('sname').addEventListener('keyup',example)
 
-function example (s) {
-    var value = s;
-    console.log(value);
+let g = document.getElementsByTagName('input')[4];
+let placeholdertwo = document.createElement('p');
+y.insertBefore(placeholdertwo,g)
+console.log(g);
+function phoneKeydown() {
+    let regEx = /^(203|408|860|959)[\-]\d{3}[\-]\d{4}$/gm
+    if(g.value === regEx) {
+
+    } else {
+        
+    }
 }
-
   
