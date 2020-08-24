@@ -34,11 +34,12 @@ let g = document.getElementsByTagName('input')[4];
 let placeholdertwo = document.createElement('p');
 y.insertBefore(placeholdertwo, g)
 
-function phoneKeydown() {
+function phoneValidator() {
+    
     let regEx = /^(203|408|860|959)[\-]\d{3}[\-]\d{4}$/gm
-    if (g.value === regEx) {
-        console.log(true);
+    if(regEx.test(g.value)) {
+        console.log(g.value);
     } else {
-        console.log(false);
+        console.log(g.value);
     }
 }
