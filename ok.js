@@ -16,10 +16,13 @@ y.insertBefore(placeholderP,y[2]);
 
 function emailValidator() {
     let emailString = /^.+[\@].+[\.](com|edu|net|org|gov|mil)$/gm;
-    if(x === x) {
-
+    if(emailString.test(a.value)) {
+        console.log(true);
+    } else {
+        console.log(false);
     }
 };
+
 
 
 let g = document.getElementsByTagName('input')[4];
