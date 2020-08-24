@@ -40,5 +40,6 @@ function phoneKeydown() {
         console.log(true);
     } else {
         console.log(false);
+        console.log(g.value);
     }
 }
