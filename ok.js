@@ -14,6 +14,14 @@ var y = document.getElementsByTagName('form')[0];
  var placeholderP = document.createElement('p'); 
 y.insertBefore(placeholderP,y[2]);
 
+function formClear() {
+    y[1].value = ''
+    y[2].value = ''
+    y[3].value = ''
+    y[4].value = ''
+    y[5].value = ''
+}
+
 function emailValidator() {
     let emailString = /^.+[\@].+[\.](com|edu|net|org|gov|mil)$/gm;
     if(emailString.test(a.value)) {
