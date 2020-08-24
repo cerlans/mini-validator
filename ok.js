@@ -14,7 +14,7 @@ var placeholderP = document.createElement('p');
 document.body.appendChild(placeholderP);
 var x = document.getElementsByTagName('input')[2];
 var y = document.getElementsByTagName('form')[0];
-y.insertBefore(placeholderP, x)
+y.insertBefore(placeholderP,y[2])
 
 function keydown() {
     var z = document.getElementById('Email').value;
@@ -30,7 +30,7 @@ function keydown() {
 let g = document.getElementsByTagName('input')[4];
 let placeholdertwo = document.createElement('p');
 placeholdertwo.innerText = 'Number must be seperated by -';
-y.insertBefore(placeholdertwo, g)
+y.insertBefore(placeholdertwo,y[5]);
 
 function phoneValidator() {
     
@@ -41,6 +41,6 @@ function phoneValidator() {
         placeholdertwo.innerText = 'Not a valid number!'
     }
      if(g.value === '') {
-        placeholdertwo.innerText = 'Number must be seperated by -'
+        placeholdertwo.innerText = 'Number must be separated by -'
     } 
 }
