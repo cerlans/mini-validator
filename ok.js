@@ -17,9 +17,9 @@ y.insertBefore(placeholderP,y[2]);
 function emailValidator() {
     let emailString = /^.+[\@].+[\.](com|edu|net|org|gov|mil)$/gm;
     if(emailString.test(a.value)) {
-        console.log(true);
+        placeholderP.innerText = '';
     } else {
-        console.log(false);
+        placeholderP.innerText = 'Must be a Valid Email Format!'
     }
 };
 
