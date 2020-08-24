@@ -9,22 +9,18 @@ document.body.insertBefore(firstHeader, script[0]);
 document.body.insertBefore(firstClass[0], script[0]);
 
 
-var z = document.getElementById('Email').value;
-var placeholderP = document.createElement('p');
-document.body.appendChild(placeholderP);
+var a = document.getElementsByTagName('input')[0]
 var x = document.getElementsByTagName('input')[2];
+var placeholderP = document.createElement('p');
 var y = document.getElementsByTagName('form')[0];
-y.insertBefore(placeholderP,y[2])
+y.insertBefore(placeholderP,y[2]);
 
-function keydown() {
-    var z = document.getElementById('Email').value;
-    if (z.includes('@') && z.length > 10) {
-        placeholderP.innerText = 'This is a good Email!'
-    } else {
-        placeholderP.innerText = 'This is not a valid email!'
+function emailValidator() {
+    let emailString = /^.+[\@].+[\.](com|edu|net|org|gov|mil)$/gm;
+    if(x === x) {
+
     }
-
-}
+};
 
 
 let g = document.getElementsByTagName('input')[4];
