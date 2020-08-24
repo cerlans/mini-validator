@@ -1,4 +1,3 @@
-// element creation
 var firstHeader = document.createElement('h1');
 firstHeader.innerText = 'Validator';
 firstHeader.style.textAlign = 'center';
@@ -10,13 +9,11 @@ document.body.insertBefore(firstHeader, script[0]);
 document.body.insertBefore(firstClass[0], script[0]);
 
 
-// dom retrieval
 var z = document.getElementById('Email').value;
 var placeholderP = document.createElement('p');
 document.body.appendChild(placeholderP);
 var x = document.getElementsByTagName('input')[2];
 var y = document.getElementsByTagName('form')[0];
-console.log(placeholderP);
 y.insertBefore(placeholderP, x)
 
 function keydown() {
@@ -32,14 +29,18 @@ function keydown() {
 
 let g = document.getElementsByTagName('input')[4];
 let placeholdertwo = document.createElement('p');
+placeholdertwo.innerText = 'Number must be seperated by -';
 y.insertBefore(placeholdertwo, g)
 
 function phoneValidator() {
     
     let regEx = /^(203|408|860|959)[\-]\d{3}[\-]\d{4}$/gm
     if(regEx.test(g.value)) {
-        console.log(g.value);
+        placeholdertwo.innerText = 'This is a valid number!'
     } else {
-        console.log(g.value);
+        placeholdertwo.innerText = 'Not a valid number!'
     }
+     if(g.value === '') {
+        placeholdertwo.innerText = 'Number must be seperated by -'
+    } 
 }
