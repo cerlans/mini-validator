@@ -11,15 +11,14 @@ document.body.insertBefore(firstClass[0], script[0]);
 
 var a = document.getElementsByTagName('input')[0]
 var y = document.getElementsByTagName('form')[0];
- var placeholderP = document.createElement('p'); 
+var s = document.getElementsByTagName('input');
+var placeholderP = document.createElement('p'); 
 y.insertBefore(placeholderP,y[2]);
 
 function formClear() {
-    y[1].value = ''
-    y[2].value = ''
-    y[3].value = ''
-    y[4].value = ''
-    y[5].value = ''
+    for (item of s) {
+        item.value = '';
+    }
 }
 
 function emailValidator() {
