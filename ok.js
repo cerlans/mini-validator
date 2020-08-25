@@ -11,12 +11,12 @@ document.body.insertBefore(firstClass[0], script[0]);
 
 var a = document.getElementsByTagName('input')[0]
 var y = document.getElementsByTagName('form')[0];
-var s = document.getElementsByTagName('input');
+var allInputs = document.getElementsByTagName('input');
 var placeholderP = document.createElement('p'); 
 y.insertBefore(placeholderP,y[2]);
 
 function formClear() {
-    for (item of s) {
+    for (item of allInputs) {
         item.value = '';
     }
 }
