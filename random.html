@@ -1,58 +1,54 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-<title>Title of the document</title>
-<meta> <link rel="stylesheet" href="timer.css">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-  .firstDiv {
-      max-width: 800px;
-      margin: 0 auto;
-      border: solid black;
-  }
-  form input {
-      width: 100%;
-      margin-bottom: 5px;
-      padding:15px;
-
-  }
-   
- form div {
-    border: solid red;
-    width:100%;
-    height:100px;
-  }
-</style>
-</head>
-
-<body onload="formClear()">
-  <div class="firstDiv">
-      <div class="shader">
-    <form action="/action_page.php" method="POST">
-        <input type="text"  name="Username" placeholder="Username" onfocus = 'userNameGuideBox()' onblur="userNameGuideBoxout()" onkeyup="userNameGuideBoxField()">
-       <div>
-          <P><i class="fas fa-check"></i> Minimum 8 characters</P>
-          <P><i class="fas fa-check"></i> Must contain atleast 1 number</P>
-          <P><i class="fas fa-check"></i> Must contain atleast 1 letter</P>
-        </div>
-        <input type="text" name="Email" placeholder="Email Address" onkeyup="emailValidator()" ><br>
-        <input type="text" name="Password" placeholder="Password">
-        <input type="text" name="ConfPassword" placeholder="Confirm Password"><br><br>
-        <input type="text" name="Number" placeholder="Enter Your Phone Number" onkeyup="phoneValidator()"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
+   <head>
+      <title>Title of the document</title>
+      <meta>
+      <link rel="stylesheet" href="timer.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+      <style>
+         * {
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+         }
+         .firstDiv {
+         max-width: 800px;
+         margin: 0 auto;
+         border: solid black;
+         }
+         form input {
+         width: 100%;
+         margin-bottom: 5px;
+         padding:15px;
+         }
+         form div {
+         border: solid red;
+         width:100%;
+         height:100px;
+         }
+      </style>
+   </head>
+   <body onload="formClear()">
+      <div class="firstDiv">
+         <div class="shader">
+            <form action="/action_page.php" method="POST">
+               <input type="text"  name="Username" placeholder="Username" onfocus = 'userNameGuideBox()' onblur="userNameGuideBoxout()" onkeyup="userNameGuideBoxField()">
+               <div>
+                  <P><i class="fas fa-check"></i> Minimum 8 characters</P>
+                  <P><i class="fas fa-check"></i> Must contain atleast 1 number</P>
+                  <P><i class="fas fa-check"></i> Must contain atleast 1 letter</P>
+               </div>
+               <input type="text" name="Email" placeholder="Email Address" onkeyup="emailValidator()" ><br>
+               <input type="text" name="Password" placeholder="Password">
+               <input type="text" name="ConfPassword" placeholder="Confirm Password"><br><br>
+               <input type="text" name="Number" placeholder="Enter Your Phone Number" onkeyup="phoneValidator()"><br><br>
+               <input type="submit" value="Submit">
+            </form>
+         </div>
       </div>
-  </div>
-<script src="./ok.js">  
-</script>
-</body>
-
+      <script src="./ok.js">  </script>
+   </body>
 </html>
-
 
