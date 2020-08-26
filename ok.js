@@ -1,5 +1,5 @@
 var firstHeader = document.createElement('h1');
-firstHeader.innerText = 'Validator';
+firstHeader.innerText = 'Sign-Up Validator';
 firstHeader.style.textAlign = 'center';
 
 var script = document.body.getElementsByTagName('script');
@@ -14,6 +14,18 @@ var y = document.getElementsByTagName('form')[0];
 var allInputs = document.getElementsByTagName('input');
 var placeholderP = document.createElement('p'); 
 y.insertBefore(placeholderP,y[2]);
+
+
+function userNameGuideBox() {
+    innerDiv[2].style.display = 'block';
+}
+
+function userNameGuideBoxout() {
+    innerDiv[2].style.display = 'none';
+}
+
+
+
 
 function formClear() {
     for (item of allInputs) {
