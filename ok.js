@@ -22,13 +22,16 @@ function userNameGuideBox() {
 
 function userNameGuideBoxField() {
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
+    let fontIcons = document.getElementsByTagName('i')
     if(userNameGuide.test(allInputs[0].value)) {
         console.log(true);
     } else {
         console.log(false);
     }
-    if (allInputs[0].value.length >= 8) {
-        console.log(allInputs[0].value);
+    if (allInputs[0].value.length >= 3) {
+        fontIcons[0].style.display = 'inline';
+    } else {
+        fontIcons[0].style.display = 'none'
     }
 
 }
