@@ -12,8 +12,8 @@ document.body.insertBefore(firstClass[0], script[0]);
 var a = document.getElementsByTagName('input')[0]
 var y = document.getElementsByTagName('form')[0];
 var allInputs = document.getElementsByTagName('input');
-var placeholderP = document.createElement('p'); 
-y.insertBefore(placeholderP,y[2]);
+var placeholderP = document.createElement('p');
+y.insertBefore(placeholderP, y[2]);
 
 
 function userNameGuideBox() {
@@ -23,7 +23,7 @@ function userNameGuideBox() {
 function userNameGuideBoxField() {
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
     let fontIcons = document.getElementsByTagName('i')
-    if(userNameGuide.test(allInputs[0].value)) {
+    if (userNameGuide.test(allInputs[0].value)) {
         console.log(true);
     } else {
         console.log(false);
@@ -39,7 +39,7 @@ function userNameGuideBoxField() {
 function userNameGuideBoxOut() {
     innerDiv[2].style.display = 'none';
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
-    if(userNameGuide.test(allInputs[0].value)) {
+    if (userNameGuide.test(allInputs[0].value)) {
         console.log(true);
     } else {
         console.log(false);
@@ -55,7 +55,7 @@ function formClear() {
 
 function emailValidator() {
     let emailString = /^.+[\@].+[\.](com|edu|net|org|gov|mil)$/gm;
-    if(emailString.test(a.value)) {
+    if (emailString.test(a.value)) {
         placeholderP.innerText = '';
     } else {
         placeholderP.innerText = 'Must be a Valid Email Format!'
@@ -67,17 +67,17 @@ function emailValidator() {
 let g = document.getElementsByTagName('input')[4];
 let placeholdertwo = document.createElement('p');
 placeholdertwo.innerText = 'Number must be seperated by -';
-y.insertBefore(placeholdertwo,y[5]);
+y.insertBefore(placeholdertwo, y[5]);
 
 function phoneValidator() {
-    
+
     let regEx = /^(203|408|860|959)[\-]\d{3}[\-]\d{4}$/gm
-    if(regEx.test(g.value)) {
+    if (regEx.test(g.value)) {
         placeholdertwo.innerText = 'This is a valid number!'
     } else {
         placeholdertwo.innerText = 'Not a valid number!'
     }
-     if(g.value === '') {
+    if (g.value === '') {
         placeholdertwo.innerText = 'Number must be separated by -'
-    } 
+    }
 }
