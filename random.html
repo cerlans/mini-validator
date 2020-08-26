@@ -35,16 +35,17 @@
   <div class="firstDiv">
       <div class="shader">
     <form action="/action_page.php" method="POST">
-        <input type="text" id="fname" name="Username" placeholder="Username" required><br>
+        <input type="text"  name="Username" placeholder="Username" onfocus = 'userNameGuideBox()' onblur="userNameGuideBoxout()">
        <div>
           <P><i class="fas fa-check"></i> Be between 5-50 Characters</P>
           <P><i class="fas fa-check"></i> Must be unique</P>
           <P><i class="fas fa-check"></i> No spaces</P>
+          <P><i class="fas fa-check"></i> Contain at least 1 letter</P>
         </div>
-        <input type="text" id="Email" name="Email" placeholder="Email Address" onkeypress="keydown()" ><br>
-        <input type="text" id="sname" name="Password" placeholder="Password">
-        <input type="text" id="lname" name="ConfPassword" placeholder="Confirm Password" required><br><br>
-        <input type="text" id="phoneNumber" name="Number" placeholder="Enter Your Phone Number" onkeyup="phoneValidator()"><br><br>
+        <input type="text" name="Email" placeholder="Email Address" onkeyup="emailValidator()" ><br>
+        <input type="text" name="Password" placeholder="Password">
+        <input type="text" name="ConfPassword" placeholder="Confirm Password"><br><br>
+        <input type="text" name="Number" placeholder="Enter Your Phone Number" onkeyup="phoneValidator()"><br><br>
         <input type="submit" value="Submit">
       </form> 
       </div>
