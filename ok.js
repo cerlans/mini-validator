@@ -18,13 +18,23 @@ y.insertBefore(placeholderP,y[2]);
 
 function userNameGuideBox() {
     innerDiv[2].style.display = 'block';
+    let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
+    if(userNameGuide.test(allInputs[0].value)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 }
 
 function userNameGuideBoxout() {
     innerDiv[2].style.display = 'none';
+    let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
+    if(userNameGuide.test(allInputs[0].value)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 }
-
-
 
 
 function formClear() {
