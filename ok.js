@@ -18,15 +18,22 @@ y.insertBefore(placeholderP,y[2]);
 
 function userNameGuideBox() {
     innerDiv[2].style.display = 'block';
+}
+
+function userNameGuideBoxField() {
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
     if(userNameGuide.test(allInputs[0].value)) {
         console.log(true);
     } else {
         console.log(false);
     }
+    if (allInputs[0].value.length >= 8) {
+        console.log(allInputs[0].value);
+    }
+
 }
 
-function userNameGuideBoxout() {
+function userNameGuideBoxOut() {
     innerDiv[2].style.display = 'none';
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
     if(userNameGuide.test(allInputs[0].value)) {
