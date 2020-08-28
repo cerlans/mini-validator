@@ -51,7 +51,7 @@ function userNameGuideBoxOut() {
     if(userNameGuide.test(allInputs[0].value)) {
         allInputs[0].style.border = 'none';
     } else {
-        allInputs[0].style.border = 'solid blue';
+        allInputs[0].style.border = 'solid red';
     }    
 }
 
