@@ -21,31 +21,39 @@ function userNameGuideBox() {
 }
 
 function userNameGuideBoxField() {
-    let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
     let fontIcons = document.getElementsByTagName('i')
-    if (userNameGuide.test(allInputs[0].value)) {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
-    if (allInputs[0].value.length >= 3) {
+    if (allInputs[0].value.length >= 8) {
         fontIcons[0].style.display = 'inline';
     } else {
         fontIcons[0].style.display = 'none'
     }
 
+    if (allInputs[0].value.match(/[0-9]/)) {
+        fontIcons[1].style.display = 'inline';
+    } else {
+    
+        fontIcons[1].style.display = 'none';
+    
+    }
+
+   if (allInputs[0].value.match(/[a-z]/i)) {
+       fontIcons[2].style.display = 'inline';
+   } else {
+
+       fontIcons[2].style.display = 'none';
+
+   }
 }
 
 function userNameGuideBoxOut() {
     innerDiv[2].style.display = 'none';
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
-    if (userNameGuide.test(allInputs[0].value)) {
-        console.log(true);
+    if(userNameGuide.test(allInputs[0].value)) {
+        allInputs[0].style.border = 'none';
     } else {
-        console.log(false);
-    }
+        allInputs[0].style.border = 'solid blue';
+    }    
 }
-
 
 function formClear() {
     for (item of allInputs) {
