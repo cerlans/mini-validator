@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,19 +62,20 @@
       </fieldset>
       <fieldset>
         <label for="email"><h1>Email</h1></label>
-        <input type="text"  name="Email"  onfocus= "emailValidator()" onblur= "emailValidator()" ><br>
+        <input type="text"  name="Email"  onfocus= "emailValidator()" onblur= "emailValidatorOut()" ><br>
+        <P></P>
       </fieldset>
       <fieldset>
         <label for=" password"><h1>Password</h1></label>
         <input type="text"  name="Password" onfocus= "passwordGuideBox()" onblur = 'passwordGuideBoxOut()'>
         <div>
           <P><i class="fas fa-check"></i> Minimum 9 characters</P>
-
         </div>
       </fieldset>
       <fieldset>
         <label for="Phone Number"><h1>Phone Number</h1></label>
-        <input type="text"  name="Number" onkeyup="phoneValidator()"><br><br>
+        <input type="text"  name="Number" onfocus="phoneValidator()" onblur="phoneValidatorOut()"><br><br>
+        <p></p>
       </fieldset>
       </form> 
       </div>
