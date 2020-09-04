@@ -1,50 +1,52 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-<title>Title of the document</title>
-<meta> <link rel="stylesheet" href="timer.css">
-<link rel="stylesheet" href="complimentary.css" >
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-</head>
-
-<body onload="formClear()">
-  <div class="Shader">
-    <h1 style="text-align: center;">Create An Account</h1>
-      <div class="firstDiv">
-      <form action="/action_page.php" method="POST">
-        <fieldset>
-          <label><h1>UserName</h1></label>
-        <input type="text"  name="Username" onfocus = 'userNameGuideBox()' onblur="userNameGuideBoxOut()" onkeyup="userNameGuideBoxField()">
-        <div>
-          <P><i class="fas fa-check"></i> Minimum 8 characters</P>
-          <P><i class="fas fa-check"></i> Must contain atleast 1 number</P>
-          <P><i class="fas fa-check"></i> Must contain atleast 1 letter</P>
-        </div>
-      </fieldset>
-      <fieldset>
-        <label for="email"><h1>Email</h1></label>
-        <input type="text"  name="Email"  onfocus= "emailValidator()" onblur= "emailValidatorOut()" ><br>
-        <P></P>
-      </fieldset>
-      <fieldset>
-        <label for=" password"><h1>Password</h1></label>
-        <input type="text"  name="Password" onfocus= "passwordGuideBox()" onblur = 'passwordGuideBoxOut()'>
-        <div>
-          <P><i class="fas fa-check"></i> Minimum 9 characters</P>
-        </div>
-      </fieldset>
-      <fieldset>
-        <label for="Phone Number"><h1>Phone Number</h1></label>
-        <input type="text"  name="Number" onfocus="phoneValidator()" onblur="phoneValidatorOut()"><br><br>
-        <p></p>
-      </fieldset>
-      </form> 
+   <head>
+      <title>Title of the document</title>
+      <meta>
+      <link rel="stylesheet" href="complimentary.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class = 'first-div'>
+         <div class = 'innercontainer'>
+            <h1>Create an Account</h1>
+            <p>Already have an account? Sign In</p>
+            <div class = 'header-buttons'>
+               <button>
+               <i class="fab fa-facebook-f"></i> Facebook
+               </button>
+               <button>
+               <i class="fab fa-google"></i>Google
+               </button>
+            </div>
+            <p style="margin-top: 20px;">Or Create one Below</p>
+         </div>
+         <form>
+            <fieldset>
+               <label>Email</label>
+               <input type="text" id="email" onblur="emailValidator()"></input>
+               <p> </p>
+            </fieldset>
+            <fieldset>
+               <label>Username</label>
+               <input type="text"></input>
+               <div id='hidden-div'>
+                  <P><i class="fas fa-check"></i> Minimum 8 characters</P>
+                  <P><i class="fas fa-check"></i> Must contain atleast 1 number</P>
+                  <P><i class="fas fa-check"></i> Must contain atleast 1 letter</P>
+               </div>
+            </fieldset>
+            <fieldset>
+               <label>Password</label>
+               <input type="text"></input>
+            </fieldset>
+            <input type="submit" value="Create An Account" class="submit">
+         </form>
       </div>
-  </div>
-<script src="./ok.js">  
-</script>
-</body>
-
+   </body>
 </html>
+
 
 
