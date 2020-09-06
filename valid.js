@@ -25,6 +25,7 @@ let fontIcons = document.getElementsByTagName('i')
 let username = document.getElementById('userName');
 console.log(username);
 console.log(fontIcons);
+document.getElementById('userName').addEventListener('keyup',userNameGuideBoxField);
 function userNameGuideBoxField() {
     hiddenDiv.style.display = 'block';
     if (username.value.length >= 8) {
@@ -48,4 +49,12 @@ function userNameGuideBoxField() {
    }
 }
 
-
+function userNameOut() {
+    let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
+if (userNameGuide.test(userName.value)) {
+    hiddenDiv.style.display = 'none';
+    username.style.border = '1px solid black'
+} else {
+    username.style.border = '1.5px solid #800000'
+    hiddenDiv.style.display = 'none';
+}
