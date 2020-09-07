@@ -82,5 +82,4 @@ function phoneValidatorOut() {
     }
 
 }
-document.getElementById('phoneNumber').addEventListener('focusout',phoneValidator);
-
+document.getElementById('phoneNumber').addEventListener('blur',phoneValidatorOut);
