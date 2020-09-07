@@ -5,7 +5,6 @@ function formClear() {
         item.value = '';
     }
 }
-
 document.getElementById('email').addEventListener('blur', emailValidator)
 function emailValidator() {
     let email = document.getElementById('email');
@@ -25,11 +24,15 @@ function emailValidator() {
 let hiddenDiv = document.getElementById('hidden-div');
 let fontIcons = document.getElementsByTagName('i')
 let username = document.getElementById('userName');
+console.log(username);
+console.log(fontIcons);
 document.getElementById('userName').addEventListener('focus',function() {
     hiddenDiv.style.display = 'block';
 });
 document.getElementById('userName').addEventListener('keyup',userNameGuideBoxField);
+
 function userNameGuideBoxField() {
+
     if (username.value.length >= 8) {
         fontIcons[2].style.display = 'inline';
     } else {
@@ -52,6 +55,7 @@ function userNameGuideBoxField() {
 }
 
 document.getElementById('userName').addEventListener('blur',userNameOut);
+
 function userNameOut() {
     let userNameGuide = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/gm
 if (userNameGuide.test(userName.value)) {
@@ -60,4 +64,5 @@ if (userNameGuide.test(userName.value)) {
 } else {
     username.style.border = '1.5px solid #800000'
     hiddenDiv.style.display = 'none';
+}
 }
