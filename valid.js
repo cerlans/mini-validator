@@ -1,4 +1,4 @@
-//input field reset
+//input field reset on page refresh
 function formClear() {
     let allInputs = document.getElementsByTagName('input');
     for (item of allInputs) {
@@ -24,8 +24,7 @@ function emailValidator() {
 let hiddenDiv = document.getElementById('hidden-div');
 let fontIcons = document.getElementsByTagName('i')
 let username = document.getElementById('userName');
-console.log(username);
-console.log(fontIcons);
+
 document.getElementById('userName').addEventListener('focus',function() {
     hiddenDiv.style.display = 'block';
 });
