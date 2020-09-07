@@ -66,3 +66,7 @@ if (userNameGuide.test(userName.value)) {
     hiddenDiv.style.display = 'none';
 }
 }
+
+document.getElementById('phoneNumber').addEventListener('focus',function() {
+    document.getElementById('hidden-phonediv').style.display = 'block';
+})
