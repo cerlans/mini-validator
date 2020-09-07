@@ -82,3 +82,5 @@ function phoneValidatorOut() {
     }
 
 }
+document.getElementById('phoneNumber').addEventListener('focusout',phoneValidator);
+
