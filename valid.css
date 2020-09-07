@@ -45,6 +45,7 @@ transition: 0.3s;
 i {
 margin-right:10px;
 font-size:20px;
+display:none;
 }
 input {
 margin-top:10px;;
@@ -56,7 +57,7 @@ color: white;
 }
 #hidden-div {
 border: 1px solid	#483C32;
-display: block;
+display: none;
 }
 fieldset {
 border:none;
@@ -70,4 +71,10 @@ width: 100%;
 margin-bottom: 5px;
 padding: 15px;
 border: 1px solid	#483C32;
+}
+#hidden-div{
+    display:none;
+}
+.hidden-phonediv{
+    display:none;
 }
