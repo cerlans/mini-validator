@@ -70,3 +70,15 @@ if (userNameGuide.test(userName.value)) {
 document.getElementById('phoneNumber').addEventListener('focus',function() {
     document.getElementById('hidden-phonediv').style.display = 'block';
 })
+
+function phoneValidatorOut() {
+    let regEx = /^(203|408|860|959)[\-]\d{3}[\-]\d{4}$/gm
+    document.getElementById('hidden-phonediv').style.display = 'none';
+    if(regEx.test(phoneNumber.value)) {
+        phoneNumber.style.border = '1px solid black';
+    }else {
+        phoneNumber.style.border = '1px solid #800000';
+
+    }
+
+}
